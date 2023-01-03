@@ -1,3 +1,5 @@
+"""Mocking constants for testing"""
+# flake8: noqa
 DISTRICTS_RESP = """{
     "success": true,
     "data": [
@@ -886,3 +888,2710 @@ ELECTION_DATES_PARAMS = """    {
         },
         "message": null
     }"""
+
+ELECTIONS_BY_POINT = """    {
+        "success": true,
+        "data": {
+            "longitude": -88.72466949999999,
+            "latitude": 43.194246,
+            "elections": [
+                {
+                    "date": "2020-11-03",
+                    "candidate_lists_complete": true,
+                    "districts": [
+                        {
+                            "id": 93743,
+                            "name": "United States",
+                            "type": "Country",
+                            "ballot_measures": null,
+                            "races": [
+                                {
+                                    "id": 31729,
+                                    "office": {
+                                        "id": 1,
+                                        "name": "President of the United States",
+                                        "level": "Federal",
+                                        "branch": "Executive",
+                                        "chamber": null,
+                                        "is_partisan": "Partisan all",
+                                        "type": null,
+                                        "seat": null,
+                                        "url": null,
+                                        "office_district": 93743
+                                    },
+                                    "office_district": 93743,
+                                    "url": "https://ballotpedia.org/Presidential_election,_2020",
+                                    "number_of_seats": 1,
+                                    "year": 2020,
+                                    "type": "Regular",
+                                    "is_marquee": false,
+                                    "office_position": null,
+                                    "is_ranked_choice": false,
+                                    "results_certified": true,
+                                    "stage_type": "General",
+                                    "stage_party": null,
+                                    "candidates": [
+                                        {
+                                            "id": 54804,
+                                            "race": 31729,
+                                            "running_mate": "Mike Pence",
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 1,
+                                                    "name": "Republican Party",
+                                                    "url": "https://ballotpedia.org/Republican_Party"
+                                                }
+                                            ],
+                                            "is_incumbent": true,
+                                            "is_write_in": false,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Lost",
+                                            "votes_for_cand": 1610065,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 15180,
+                                                "name": "Donald Trump",
+                                                "first_name": "Donald",
+                                                "last_name": "Trump",
+                                                "url": "https://ballotpedia.org/Donald_Trump"
+                                            }
+                                        },
+                                        {
+                                            "id": 55042,
+                                            "race": 31729,
+                                            "running_mate": null,
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 5,
+                                                    "name": "Independent",
+                                                    "url": "https://ballotpedia.org/Independent"
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": true,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Lost",
+                                            "votes_for_cand": null,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 312671,
+                                                "name": "Kasey Wells",
+                                                "first_name": "Kasey",
+                                                "last_name": "Wells",
+                                                "url": "https://ballotpedia.org/Kasey_Wells"
+                                            }
+                                        },
+                                        {
+                                            "id": 59216,
+                                            "race": 31729,
+                                            "running_mate": "Kamala D. Harris",
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 2,
+                                                    "name": "Democratic Party",
+                                                    "url": "https://ballotpedia.org/Democratic_Party"
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": false,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Won",
+                                            "votes_for_cand": 1630673,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 26709,
+                                                "name": "Joe Biden",
+                                                "first_name": "Joe",
+                                                "last_name": "Biden",
+                                                "url": "https://ballotpedia.org/Joe_Biden"
+                                            }
+                                        },
+                                        {
+                                            "id": 59781,
+                                            "race": 31729,
+                                            "running_mate": "Angela Nicole Walker",
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 4,
+                                                    "name": "Green Party",
+                                                    "url": "https://ballotpedia.org/Green_Party"
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": true,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Lost",
+                                            "votes_for_cand": null,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 21669,
+                                                "name": "Howie Hawkins",
+                                                "first_name": "Howie",
+                                                "last_name": "Hawkins",
+                                                "url": "https://ballotpedia.org/Howie_Hawkins"
+                                            }
+                                        },
+                                        {
+                                            "id": 65308,
+                                            "race": 31729,
+                                            "running_mate": "Spike Cohen",
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 3,
+                                                    "name": "Libertarian Party",
+                                                    "url": "https://ballotpedia.org/Libertarian_Party"
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": false,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Lost",
+                                            "votes_for_cand": 38491,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 322425,
+                                                "name": "Jo Jorgensen",
+                                                "first_name": "Jo",
+                                                "last_name": "Jorgensen",
+                                                "url": "https://ballotpedia.org/Jo_Jorgensen"
+                                            }
+                                        },
+                                        {
+                                            "id": 65662,
+                                            "race": 31729,
+                                            "running_mate": "Amar Patel",
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 17,
+                                                    "name": "American Solidarity Party",
+                                                    "url": null
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": false,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Lost",
+                                            "votes_for_cand": 5258,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 292603,
+                                                "name": "Brian T. Carroll",
+                                                "first_name": "Brian",
+                                                "last_name": "Carroll",
+                                                "url": "https://ballotpedia.org/Brian_T._Carroll"
+                                            }
+                                        },
+                                        {
+                                            "id": 66060,
+                                            "race": 31729,
+                                            "running_mate": "William Mohr",
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 6,
+                                                    "name": "Constitution Party",
+                                                    "url": "https://ballotpedia.org/Constitution_Party"
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": false,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Lost",
+                                            "votes_for_cand": 5144,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 292195,
+                                                "name": "Don Blankenship",
+                                                "first_name": "Don",
+                                                "last_name": "Blankenship",
+                                                "url": "https://ballotpedia.org/Don_Blankenship_(West_Virginia)"
+                                            }
+                                        },
+                                        {
+                                            "id": 72757,
+                                            "race": 31729,
+                                            "running_mate": null,
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 5,
+                                                    "name": "Independent",
+                                                    "url": "https://ballotpedia.org/Independent"
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": true,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Lost",
+                                            "votes_for_cand": null,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 312838,
+                                                "name": "President Boddie",
+                                                "first_name": "President",
+                                                "last_name": "Boddie",
+                                                "url": "https://ballotpedia.org/President_Boddie"
+                                            }
+                                        },
+                                        {
+                                            "id": 76526,
+                                            "race": 31729,
+                                            "running_mate": "Claudeliah Roze",
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 21467,
+                                                    "name": "Becoming One Nation",
+                                                    "url": null
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": true,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Lost",
+                                            "votes_for_cand": null,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 324666,
+                                                "name": "Jade Simmons",
+                                                "first_name": "Jade",
+                                                "last_name": "Simmons",
+                                                "url": "https://ballotpedia.org/Jade_Simmons"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": 433,
+                            "name": "Wisconsin District 5",
+                            "type": "Congress",
+                            "ballot_measures": null,
+                            "races": [
+                                {
+                                    "id": 31685,
+                                    "office": {
+                                        "id": 18366,
+                                        "name": "U.S. House Wisconsin District 5",
+                                        "level": "Federal",
+                                        "branch": "Legislative",
+                                        "chamber": "Lower",
+                                        "is_partisan": "Partisan all",
+                                        "type": "Representative",
+                                        "seat": "Wisconsin's 5th Congressional District",
+                                        "url": "https://ballotpedia.org/Wisconsin's_5th_Congressional_District",
+                                        "office_district": 433
+                                    },
+                                    "office_district": 433,
+                                    "url": "https://ballotpedia.org/Wisconsin%27s_5th_Congressional_District_election,_2020",
+                                    "number_of_seats": 1,
+                                    "year": 2020,
+                                    "type": "Regular",
+                                    "is_marquee": false,
+                                    "office_position": null,
+                                    "is_ranked_choice": false,
+                                    "results_certified": true,
+                                    "stage_type": "General",
+                                    "stage_party": null,
+                                    "candidates": [
+                                        {
+                                            "id": 65365,
+                                            "race": 31685,
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 1,
+                                                    "name": "Republican Party",
+                                                    "url": "https://ballotpedia.org/Republican_Party"
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": false,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Won",
+                                            "votes_for_cand": 265434,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 50408,
+                                                "name": "Scott Fitzgerald",
+                                                "first_name": "Scott",
+                                                "last_name": "Fitzgerald",
+                                                "url": "https://ballotpedia.org/Scott_Fitzgerald"
+                                            }
+                                        },
+                                        {
+                                            "id": 65431,
+                                            "race": 31685,
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 2,
+                                                    "name": "Democratic Party",
+                                                    "url": "https://ballotpedia.org/Democratic_Party"
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": false,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Lost",
+                                            "votes_for_cand": 175902,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 291468,
+                                                "name": "Tom Palzewicz",
+                                                "first_name": "Tom",
+                                                "last_name": "Palzewicz",
+                                                "url": "https://ballotpedia.org/Tom_Palzewicz"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": 7263,
+                            "name": "Wisconsin State Assembly District 37",
+                            "type": "State Legislative (Lower)",
+                            "ballot_measures": null,
+                            "races": [
+                                {
+                                    "id": 49591,
+                                    "office": {
+                                        "id": 6123,
+                                        "name": "Wisconsin State Assembly District 37",
+                                        "level": "State",
+                                        "branch": "Legislative",
+                                        "chamber": "Lower",
+                                        "is_partisan": "Partisan all",
+                                        "type": "Representative",
+                                        "seat": "District 37",
+                                        "url": "https://ballotpedia.org/Wisconsin_State_Assembly_District_37",
+                                        "office_district": 7263
+                                    },
+                                    "office_district": 7263,
+                                    "url": "https://ballotpedia.org/Wisconsin_State_Assembly_elections,_2020",
+                                    "number_of_seats": 1,
+                                    "year": 2020,
+                                    "type": "Regular",
+                                    "is_marquee": false,
+                                    "office_position": null,
+                                    "is_ranked_choice": false,
+                                    "results_certified": true,
+                                    "stage_type": "General",
+                                    "stage_party": null,
+                                    "candidates": [
+                                        {
+                                            "id": 87590,
+                                            "race": 49591,
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 2,
+                                                    "name": "Democratic Party",
+                                                    "url": "https://ballotpedia.org/Democratic_Party"
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": false,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Lost",
+                                            "votes_for_cand": 14142,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 330171,
+                                                "name": "Abigail Lowery",
+                                                "first_name": "Abigail",
+                                                "last_name": "Lowery",
+                                                "url": "https://ballotpedia.org/Abigail_Lowery"
+                                            }
+                                        },
+                                        {
+                                            "id": 87592,
+                                            "race": 49591,
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 5,
+                                                    "name": "Independent",
+                                                    "url": "https://ballotpedia.org/Independent"
+                                                }
+                                            ],
+                                            "is_incumbent": false,
+                                            "is_write_in": false,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Lost",
+                                            "votes_for_cand": 1041,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 330173,
+                                                "name": "Stephen Ratzlaff Jr.",
+                                                "first_name": "Stephen",
+                                                "last_name": "Ratzlaff",
+                                                "url": "https://ballotpedia.org/Stephen_Ratzlaff_Jr."
+                                            }
+                                        },
+                                        {
+                                            "id": 87593,
+                                            "race": 49591,
+                                            "stage_party": null,
+                                            "party_affiliation": [
+                                                {
+                                                    "id": 1,
+                                                    "name": "Republican Party",
+                                                    "url": "https://ballotpedia.org/Republican_Party"
+                                                }
+                                            ],
+                                            "is_incumbent": true,
+                                            "is_write_in": false,
+                                            "withdrew_still_on_ballot": false,
+                                            "cand_status": "Won",
+                                            "votes_for_cand": 19406,
+                                            "ranked_choice_voting_rounds": [],
+                                            "person": {
+                                                "id": 27978,
+                                                "name": "John Jagler",
+                                                "first_name": "John",
+                                                "last_name": "Jagler",
+                                                "url": "https://ballotpedia.org/John_Jagler"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "message": null
+    }"""
+
+ELECTIONS_BY_STATE = """    {
+        "success": true,
+        "data": {
+            "election_date": "2020-11-03",
+            "districts": [
+                {
+                    "id": 429,
+                    "name": "Wisconsin District 1",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31681,
+                            "office": {
+                                "id": 2462,
+                                "name": "U.S. House Wisconsin District 1",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 1st Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_1st_Congressional_District",
+                                "office_district": 429
+                            },
+                            "office_district": 429,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_1st_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "General",
+                            "stage_party": null,
+                            "candidates": [
+                                {
+                                    "id": 86856,
+                                    "race": 31681,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Won",
+                                    "votes_for_cand": 238271,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 298470,
+                                        "name": "Bryan Steil",
+                                        "first_name": "Bryan",
+                                        "last_name": "Steil",
+                                        "url": "https://ballotpedia.org/Bryan_Steil"
+                                    }
+                                },
+                                {
+                                    "id": 71354,
+                                    "race": 31681,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 163170,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 322063,
+                                        "name": "Roger Polack",
+                                        "first_name": "Roger",
+                                        "last_name": "Polack",
+                                        "url": "https://ballotpedia.org/Roger_Polack"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 430,
+                    "name": "Wisconsin District 2",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31682,
+                            "office": {
+                                "id": 10859,
+                                "name": "U.S. House Wisconsin District 2",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 2nd Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_2nd_Congressional_District",
+                                "office_district": 430
+                            },
+                            "office_district": 430,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_2nd_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "General",
+                            "stage_party": null,
+                            "candidates": [
+                                {
+                                    "id": 64770,
+                                    "race": 31682,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Won",
+                                    "votes_for_cand": 318523,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 37193,
+                                        "name": "Mark Pocan",
+                                        "first_name": "Mark",
+                                        "last_name": "Pocan",
+                                        "url": "https://ballotpedia.org/Mark_Pocan"
+                                    }
+                                },
+                                {
+                                    "id": 86859,
+                                    "race": 31682,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 138306,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 44392,
+                                        "name": "Peter Theron",
+                                        "first_name": "Peter",
+                                        "last_name": "Theron",
+                                        "url": "https://ballotpedia.org/Peter_Theron"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 431,
+                    "name": "Wisconsin District 3",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31683,
+                            "office": {
+                                "id": 6351,
+                                "name": "U.S. House Wisconsin District 3",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 3rd Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_3rd_Congressional_District",
+                                "office_district": 431
+                            },
+                            "office_district": 431,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_3rd_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "General",
+                            "stage_party": null,
+                            "candidates": [
+                                {
+                                    "id": 69082,
+                                    "race": 31683,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Won",
+                                    "votes_for_cand": 199870,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 48575,
+                                        "name": "Ronald James Kind",
+                                        "first_name": "Ronald James",
+                                        "last_name": "Kind",
+                                        "url": "https://ballotpedia.org/Ron_Kind"
+                                    }
+                                },
+                                {
+                                    "id": 78990,
+                                    "race": 31683,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 189524,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 326054,
+                                        "name": "Derrick Van Orden",
+                                        "first_name": "Derrick",
+                                        "last_name": "Van Orden",
+                                        "url": "https://ballotpedia.org/Derrick_Van_Orden"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 432,
+                    "name": "Wisconsin District 4",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31684,
+                            "office": {
+                                "id": 3854,
+                                "name": "U.S. House Wisconsin District 4",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 4th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_4th_Congressional_District",
+                                "office_district": 432
+                            },
+                            "office_district": 432,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_4th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "General",
+                            "stage_party": null,
+                            "candidates": [
+                                {
+                                    "id": 69083,
+                                    "race": 31684,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Won",
+                                    "votes_for_cand": 232668,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 20718,
+                                        "name": "Gwen Moore",
+                                        "first_name": "Gwen",
+                                        "last_name": "Moore",
+                                        "url": "https://ballotpedia.org/Gwen_Moore"
+                                    }
+                                },
+                                {
+                                    "id": 86863,
+                                    "race": 31684,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 70769,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 301297,
+                                        "name": "Tim Rogers",
+                                        "first_name": "Tim",
+                                        "last_name": "Rogers",
+                                        "url": "https://ballotpedia.org/Tim_Rogers_(Wisconsin)"
+                                    }
+                                },
+                                {
+                                    "id": 86862,
+                                    "race": 31684,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 5,
+                                            "name": "Independent",
+                                            "url": "https://ballotpedia.org/Independent"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 7911,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 47819,
+                                        "name": "Robert Raymond",
+                                        "first_name": "Robert",
+                                        "last_name": "Raymond",
+                                        "url": "https://ballotpedia.org/Robert_Raymond"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 433,
+                    "name": "Wisconsin District 5",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31685,
+                            "office": {
+                                "id": 18366,
+                                "name": "U.S. House Wisconsin District 5",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 5th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_5th_Congressional_District",
+                                "office_district": 433
+                            },
+                            "office_district": 433,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_5th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "General",
+                            "stage_party": null,
+                            "candidates": [
+                                {
+                                    "id": 65431,
+                                    "race": 31685,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 175902,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 291468,
+                                        "name": "Tom Palzewicz",
+                                        "first_name": "Tom",
+                                        "last_name": "Palzewicz",
+                                        "url": "https://ballotpedia.org/Tom_Palzewicz"
+                                    }
+                                },
+                                {
+                                    "id": 65365,
+                                    "race": 31685,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Won",
+                                    "votes_for_cand": 265434,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 50408,
+                                        "name": "Scott Fitzgerald",
+                                        "first_name": "Scott",
+                                        "last_name": "Fitzgerald",
+                                        "url": "https://ballotpedia.org/Scott_Fitzgerald"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 434,
+                    "name": "Wisconsin District 6",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31686,
+                            "office": {
+                                "id": 3154,
+                                "name": "U.S. House Wisconsin District 6",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 6th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_6th_Congressional_District",
+                                "office_district": 434
+                            },
+                            "office_district": 434,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_6th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "General",
+                            "stage_party": null,
+                            "candidates": [
+                                {
+                                    "id": 69084,
+                                    "race": 31686,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Won",
+                                    "votes_for_cand": 238874,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 20002,
+                                        "name": "Glenn Grothman",
+                                        "first_name": "Glenn",
+                                        "last_name": "Grothman",
+                                        "url": "https://ballotpedia.org/Glenn_Grothman"
+                                    }
+                                },
+                                {
+                                    "id": 65708,
+                                    "race": 31686,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 164239,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 25644,
+                                        "name": "Jessica King",
+                                        "first_name": "Jessica",
+                                        "last_name": "King",
+                                        "url": "https://ballotpedia.org/Jessica_King_(Wisconsin)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 435,
+                    "name": "Wisconsin District 7",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31687,
+                            "office": {
+                                "id": 4951,
+                                "name": "U.S. House Wisconsin District 7",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 7th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_7th_Congressional_District",
+                                "office_district": 435
+                            },
+                            "office_district": 435,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_7th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "General",
+                            "stage_party": null,
+                            "candidates": [
+                                {
+                                    "id": 86868,
+                                    "race": 31687,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Won",
+                                    "votes_for_cand": 252048,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 56044,
+                                        "name": "Tom Tiffany",
+                                        "first_name": "Tom",
+                                        "last_name": "Tiffany",
+                                        "url": "https://ballotpedia.org/Tom_Tiffany"
+                                    }
+                                },
+                                {
+                                    "id": 85345,
+                                    "race": 31687,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 162741,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 293245,
+                                        "name": "Tricia Zunker",
+                                        "first_name": "Tricia",
+                                        "last_name": "Zunker",
+                                        "url": "https://ballotpedia.org/Tricia_Zunker"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 436,
+                    "name": "Wisconsin District 8",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31688,
+                            "office": {
+                                "id": 16129,
+                                "name": "U.S. House Wisconsin District 8",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 8th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_8th_Congressional_District",
+                                "office_district": 436
+                            },
+                            "office_district": 436,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_8th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "General",
+                            "stage_party": null,
+                            "candidates": [
+                                {
+                                    "id": 69085,
+                                    "race": 31688,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Won",
+                                    "votes_for_cand": 268173,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 39493,
+                                        "name": "Mike Gallagher",
+                                        "first_name": "Mike",
+                                        "last_name": "Gallagher",
+                                        "url": "https://ballotpedia.org/Michael_Gallagher_(Wisconsin)"
+                                    }
+                                },
+                                {
+                                    "id": 60416,
+                                    "race": 31688,
+                                    "stage_party": null,
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 149558,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 1287,
+                                        "name": "Amanda Stuck",
+                                        "first_name": "Amanda",
+                                        "last_name": "Stuck",
+                                        "url": "https://ballotpedia.org/Amanda_Stuck"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "message": null
+    }"""
+
+ELECTIONS_BY_STATE_PARTISAN = """    {
+        "success": true,
+        "data": {
+            "election_date": "2020-08-11",
+            "districts": [
+                {
+                    "id": 429,
+                    "name": "Wisconsin District 1",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31681,
+                            "office": {
+                                "id": 2462,
+                                "name": "U.S. House Wisconsin District 1",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 1st Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_1st_Congressional_District",
+                                "office_district": 429
+                            },
+                            "office_district": 429,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_1st_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": false,
+                            "stage_type": "Primary",
+                            "stage_party": "Democratic Party",
+                            "candidates": [
+                                {
+                                    "id": 62622,
+                                    "race": 31681,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 20608,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 301301,
+                                        "name": "Josh Pade",
+                                        "first_name": "Josh",
+                                        "last_name": "Pade",
+                                        "url": "https://ballotpedia.org/Josh_Pade"
+                                    }
+                                },
+                                {
+                                    "id": 71354,
+                                    "race": 31681,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 28697,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 322063,
+                                        "name": "Roger Polack",
+                                        "first_name": "Roger",
+                                        "last_name": "Polack",
+                                        "url": "https://ballotpedia.org/Roger_Polack"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 31681,
+                            "office": {
+                                "id": 2462,
+                                "name": "U.S. House Wisconsin District 1",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 1st Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_1st_Congressional_District",
+                                "office_district": 429
+                            },
+                            "office_district": 429,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_1st_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Republican Party",
+                            "candidates": [
+                                {
+                                    "id": 86856,
+                                    "race": 31681,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 40273,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 298470,
+                                        "name": "Bryan Steil",
+                                        "first_name": "Bryan",
+                                        "last_name": "Steil",
+                                        "url": "https://ballotpedia.org/Bryan_Steil"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 430,
+                    "name": "Wisconsin District 2",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31682,
+                            "office": {
+                                "id": 10859,
+                                "name": "U.S. House Wisconsin District 2",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 2nd Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_2nd_Congressional_District",
+                                "office_district": 430
+                            },
+                            "office_district": 430,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_2nd_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Democratic Party",
+                            "candidates": [
+                                {
+                                    "id": 64770,
+                                    "race": 31682,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 120353,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 37193,
+                                        "name": "Mark Pocan",
+                                        "first_name": "Mark",
+                                        "last_name": "Pocan",
+                                        "url": "https://ballotpedia.org/Mark_Pocan"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 31682,
+                            "office": {
+                                "id": 10859,
+                                "name": "U.S. House Wisconsin District 2",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 2nd Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_2nd_Congressional_District",
+                                "office_district": 430
+                            },
+                            "office_district": 430,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_2nd_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Republican Party",
+                            "candidates": [
+                                {
+                                    "id": 86859,
+                                    "race": 31682,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 18812,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 44392,
+                                        "name": "Peter Theron",
+                                        "first_name": "Peter",
+                                        "last_name": "Theron",
+                                        "url": "https://ballotpedia.org/Peter_Theron"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 431,
+                    "name": "Wisconsin District 3",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31683,
+                            "office": {
+                                "id": 6351,
+                                "name": "U.S. House Wisconsin District 3",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 3rd Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_3rd_Congressional_District",
+                                "office_district": 431
+                            },
+                            "office_district": 431,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_3rd_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Republican Party",
+                            "candidates": [
+                                {
+                                    "id": 74688,
+                                    "race": 31683,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 18835,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 323890,
+                                        "name": "Jessi Ebben",
+                                        "first_name": "Jessi",
+                                        "last_name": "Ebben",
+                                        "url": "https://ballotpedia.org/Jessi_Ebben"
+                                    }
+                                },
+                                {
+                                    "id": 78990,
+                                    "race": 31683,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 36395,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 326054,
+                                        "name": "Derrick Van Orden",
+                                        "first_name": "Derrick",
+                                        "last_name": "Van Orden",
+                                        "url": "https://ballotpedia.org/Derrick_Van_Orden"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 31683,
+                            "office": {
+                                "id": 6351,
+                                "name": "U.S. House Wisconsin District 3",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 3rd Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_3rd_Congressional_District",
+                                "office_district": 431
+                            },
+                            "office_district": 431,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_3rd_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Democratic Party",
+                            "candidates": [
+                                {
+                                    "id": 69082,
+                                    "race": 31683,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 53064,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 48575,
+                                        "name": "Ronald James Kind",
+                                        "first_name": "Ronald James",
+                                        "last_name": "Kind",
+                                        "url": "https://ballotpedia.org/Ron_Kind"
+                                    }
+                                },
+                                {
+                                    "id": 71870,
+                                    "race": 31683,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 12765,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 323092,
+                                        "name": "Mark A. Neumann",
+                                        "first_name": "Mark",
+                                        "last_name": "Neumann",
+                                        "url": "https://ballotpedia.org/Mark_Neumann_(Wisconsin_congressional_candidate)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 432,
+                    "name": "Wisconsin District 4",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31684,
+                            "office": {
+                                "id": 3854,
+                                "name": "U.S. House Wisconsin District 4",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 4th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_4th_Congressional_District",
+                                "office_district": 432
+                            },
+                            "office_district": 432,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_4th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Democratic Party",
+                            "candidates": [
+                                {
+                                    "id": 69083,
+                                    "race": 31684,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 68898,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 20718,
+                                        "name": "Gwen Moore",
+                                        "first_name": "Gwen",
+                                        "last_name": "Moore",
+                                        "url": "https://ballotpedia.org/Gwen_Moore"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 31684,
+                            "office": {
+                                "id": 3854,
+                                "name": "U.S. House Wisconsin District 4",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 4th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_4th_Congressional_District",
+                                "office_district": 432
+                            },
+                            "office_district": 432,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_4th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Republican Party",
+                            "candidates": [
+                                {
+                                    "id": 86863,
+                                    "race": 31684,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 6685,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 301297,
+                                        "name": "Tim Rogers",
+                                        "first_name": "Tim",
+                                        "last_name": "Rogers",
+                                        "url": "https://ballotpedia.org/Tim_Rogers_(Wisconsin)"
+                                    }
+                                },
+                                {
+                                    "id": 71872,
+                                    "race": 31684,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 6598,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 301298,
+                                        "name": "Cindy Werner",
+                                        "first_name": "Cindy",
+                                        "last_name": "Werner",
+                                        "url": "https://ballotpedia.org/Cindy_Werner"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 433,
+                    "name": "Wisconsin District 5",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31685,
+                            "office": {
+                                "id": 18366,
+                                "name": "U.S. House Wisconsin District 5",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 5th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_5th_Congressional_District",
+                                "office_district": 433
+                            },
+                            "office_district": 433,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_5th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Democratic Party",
+                            "candidates": [
+                                {
+                                    "id": 65431,
+                                    "race": 31685,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 43710,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 291468,
+                                        "name": "Tom Palzewicz",
+                                        "first_name": "Tom",
+                                        "last_name": "Palzewicz",
+                                        "url": "https://ballotpedia.org/Tom_Palzewicz"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 31685,
+                            "office": {
+                                "id": 18366,
+                                "name": "U.S. House Wisconsin District 5",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 5th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_5th_Congressional_District",
+                                "office_district": 433
+                            },
+                            "office_district": 433,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_5th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": true,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Republican Party",
+                            "candidates": [
+                                {
+                                    "id": 83219,
+                                    "race": 31685,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 17829,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 328083,
+                                        "name": "Clifford DeTemple",
+                                        "first_name": "Clifford",
+                                        "last_name": "DeTemple",
+                                        "url": "https://ballotpedia.org/Clifford_DeTemple"
+                                    }
+                                },
+                                {
+                                    "id": 65365,
+                                    "race": 31685,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 60676,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 50408,
+                                        "name": "Scott Fitzgerald",
+                                        "first_name": "Scott",
+                                        "last_name": "Fitzgerald",
+                                        "url": "https://ballotpedia.org/Scott_Fitzgerald"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 434,
+                    "name": "Wisconsin District 6",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31686,
+                            "office": {
+                                "id": 3154,
+                                "name": "U.S. House Wisconsin District 6",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 6th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_6th_Congressional_District",
+                                "office_district": 434
+                            },
+                            "office_district": 434,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_6th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Republican Party",
+                            "candidates": [
+                                {
+                                    "id": 69084,
+                                    "race": 31686,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 52247,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 20002,
+                                        "name": "Glenn Grothman",
+                                        "first_name": "Glenn",
+                                        "last_name": "Grothman",
+                                        "url": "https://ballotpedia.org/Glenn_Grothman"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 31686,
+                            "office": {
+                                "id": 3154,
+                                "name": "U.S. House Wisconsin District 6",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 6th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_6th_Congressional_District",
+                                "office_district": 434
+                            },
+                            "office_district": 434,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_6th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": false,
+                            "stage_type": "Primary",
+                            "stage_party": "Democratic Party",
+                            "candidates": [
+                                {
+                                    "id": 73552,
+                                    "race": 31686,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 7885,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 323313,
+                                        "name": "Michael Beardsley",
+                                        "first_name": "Michael",
+                                        "last_name": "Beardsley",
+                                        "url": "https://ballotpedia.org/Michael_Beardsley"
+                                    }
+                                },
+                                {
+                                    "id": 63649,
+                                    "race": 31686,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Lost",
+                                    "votes_for_cand": 4565,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 317776,
+                                        "name": "Matthew Boor",
+                                        "first_name": "Matthew",
+                                        "last_name": "Boor",
+                                        "url": "https://ballotpedia.org/Matthew_Boor"
+                                    }
+                                },
+                                {
+                                    "id": 65708,
+                                    "race": 31686,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 38039,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 25644,
+                                        "name": "Jessica King",
+                                        "first_name": "Jessica",
+                                        "last_name": "King",
+                                        "url": "https://ballotpedia.org/Jessica_King_(Wisconsin)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 435,
+                    "name": "Wisconsin District 7",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31687,
+                            "office": {
+                                "id": 4951,
+                                "name": "U.S. House Wisconsin District 7",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 7th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_7th_Congressional_District",
+                                "office_district": 435
+                            },
+                            "office_district": 435,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_7th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Republican Party",
+                            "candidates": [
+                                {
+                                    "id": 86868,
+                                    "race": 31687,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 62142,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 56044,
+                                        "name": "Tom Tiffany",
+                                        "first_name": "Tom",
+                                        "last_name": "Tiffany",
+                                        "url": "https://ballotpedia.org/Tom_Tiffany"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 31687,
+                            "office": {
+                                "id": 4951,
+                                "name": "U.S. House Wisconsin District 7",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 7th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_7th_Congressional_District",
+                                "office_district": 435
+                            },
+                            "office_district": 435,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_7th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Democratic Party",
+                            "candidates": [
+                                {
+                                    "id": 85345,
+                                    "race": 31687,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 51139,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 293245,
+                                        "name": "Tricia Zunker",
+                                        "first_name": "Tricia",
+                                        "last_name": "Zunker",
+                                        "url": "https://ballotpedia.org/Tricia_Zunker"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 436,
+                    "name": "Wisconsin District 8",
+                    "type": "Congress",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 31688,
+                            "office": {
+                                "id": 16129,
+                                "name": "U.S. House Wisconsin District 8",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 8th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_8th_Congressional_District",
+                                "office_district": 436
+                            },
+                            "office_district": 436,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_8th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Republican Party",
+                            "candidates": [
+                                {
+                                    "id": 69085,
+                                    "race": 31688,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 50176,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 39493,
+                                        "name": "Mike Gallagher",
+                                        "first_name": "Mike",
+                                        "last_name": "Gallagher",
+                                        "url": "https://ballotpedia.org/Michael_Gallagher_(Wisconsin)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 31688,
+                            "office": {
+                                "id": 16129,
+                                "name": "U.S. House Wisconsin District 8",
+                                "level": "Federal",
+                                "branch": "Legislative",
+                                "chamber": "Lower",
+                                "is_partisan": "Partisan all",
+                                "type": "Representative",
+                                "seat": "Wisconsin's 8th Congressional District",
+                                "url": "https://ballotpedia.org/Wisconsin's_8th_Congressional_District",
+                                "office_district": 436
+                            },
+                            "office_district": 436,
+                            "url": "https://ballotpedia.org/Wisconsin%27s_8th_Congressional_District_election,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Democratic Party",
+                            "candidates": [
+                                {
+                                    "id": 60416,
+                                    "race": 31688,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 44793,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 1287,
+                                        "name": "Amanda Stuck",
+                                        "first_name": "Amanda",
+                                        "last_name": "Stuck",
+                                        "url": "https://ballotpedia.org/Amanda_Stuck"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2428,
+                    "name": "Wisconsin State Senate District 2",
+                    "type": "State Legislative (Upper)",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 49654,
+                            "office": {
+                                "id": 13559,
+                                "name": "Wisconsin State Senate District 2",
+                                "level": "State",
+                                "branch": "Legislative",
+                                "chamber": "Upper",
+                                "is_partisan": "Partisan all",
+                                "type": "Senator",
+                                "seat": "District 2",
+                                "url": "https://ballotpedia.org/Wisconsin_State_Senate_District_2",
+                                "office_district": 2428
+                            },
+                            "office_district": 2428,
+                            "url": "https://ballotpedia.org/Wisconsin_State_Senate_elections,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Democratic Party",
+                            "candidates": [
+                                {
+                                    "id": 92418,
+                                    "race": 49654,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": false,
+                                    "is_write_in": true,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 286,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 56305,
+                                        "name": "Tony Lee",
+                                        "first_name": "Tony",
+                                        "last_name": "Lee",
+                                        "url": "https://ballotpedia.org/Tony_Lee"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 49654,
+                            "office": {
+                                "id": 13559,
+                                "name": "Wisconsin State Senate District 2",
+                                "level": "State",
+                                "branch": "Legislative",
+                                "chamber": "Upper",
+                                "is_partisan": "Partisan all",
+                                "type": "Senator",
+                                "seat": "District 2",
+                                "url": "https://ballotpedia.org/Wisconsin_State_Senate_District_2",
+                                "office_district": 2428
+                            },
+                            "office_district": 2428,
+                            "url": "https://ballotpedia.org/Wisconsin_State_Senate_elections,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Republican Party",
+                            "candidates": [
+                                {
+                                    "id": 86297,
+                                    "race": 49654,
+                                    "stage_party": "Republican Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 1,
+                                            "name": "Republican Party",
+                                            "url": "https://ballotpedia.org/Republican_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 11224,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 47327,
+                                        "name": "Robert Cowles",
+                                        "first_name": "Robert",
+                                        "last_name": "Cowles",
+                                        "url": "https://ballotpedia.org/Robert_Cowles"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2430,
+                    "name": "Wisconsin State Senate District 4",
+                    "type": "State Legislative (Upper)",
+                    "ballot_measures": null,
+                    "races": [
+                        {
+                            "id": 49655,
+                            "office": {
+                                "id": 28823,
+                                "name": "Wisconsin State Senate District 4",
+                                "level": "State",
+                                "branch": "Legislative",
+                                "chamber": "Upper",
+                                "is_partisan": "Partisan all",
+                                "type": "Senator",
+                                "seat": "District 4",
+                                "url": "https://ballotpedia.org/Wisconsin_State_Senate_District_4",
+                                "office_district": 2430
+                            },
+                            "office_district": 2430,
+                            "url": "https://ballotpedia.org/Wisconsin_State_Senate_elections,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Democratic Party",
+                            "candidates": [
+                                {
+                                    "id": 86299,
+                                    "race": 49655,
+                                    "stage_party": "Democratic Party",
+                                    "party_affiliation": [
+                                        {
+                                            "id": 2,
+                                            "name": "Democratic Party",
+                                            "url": "https://ballotpedia.org/Democratic_Party"
+                                        }
+                                    ],
+                                    "is_incumbent": true,
+                                    "is_write_in": false,
+                                    "withdrew_still_on_ballot": false,
+                                    "cand_status": "Advanced",
+                                    "votes_for_cand": 16898,
+                                    "ranked_choice_voting_rounds": [],
+                                    "person": {
+                                        "id": 34367,
+                                        "name": "Lena Taylor",
+                                        "first_name": "Lena",
+                                        "last_name": "Taylor",
+                                        "url": "https://ballotpedia.org/Lena_Taylor"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 49655,
+                            "office": {
+                                "id": 28823,
+                                "name": "Wisconsin State Senate District 4",
+                                "level": "State",
+                                "branch": "Legislative",
+                                "chamber": "Upper",
+                                "is_partisan": "Partisan all",
+                                "type": "Senator",
+                                "seat": "District 4",
+                                "url": "https://ballotpedia.org/Wisconsin_State_Senate_District_4",
+                                "office_district": 2430
+                            },
+                            "office_district": 2430,
+                            "url": "https://ballotpedia.org/Wisconsin_State_Senate_elections,_2020",
+                            "number_of_seats": 1,
+                            "year": 2020,
+                            "race_type": "Regular",
+                            "is_marquee": false,
+                            "office_position": null,
+                            "is_ranked_choice": false,
+                            "results_certified": true,
+                            "stage_type": "Primary",
+                            "stage_party": "Republican Party",
+                            "candidates": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "message": null
+    }"""
+
+ELECTIONS_BY_STATE_RCV = """    {
+        "id": 93938,
+        "name": "San Francisco Board of Supervisors District 5",
+        "type": "County subdivision",
+        "ballot_measures": null,
+        "races": [
+          {
+            "id": 42896,
+            "office": {
+              "id": 12637,
+              "name": "San Francisco Board of Supervisors District 5",
+              "level": "Local",
+              "branch": "Legislative",
+              "chamber": null,
+              "is_partisan": "Nonpartisan all",
+              "type": "City council",
+              "seat": "District 5",
+              "url": null,
+              "office_district": 93938
+            },
+            "office_district": 93938,
+            "url": "https://ballotpedia.org/City_elections_in_San_Francisco,_California_(2019)",
+            "number_of_seats": 1,
+            "year": 2019,
+            "race_type": "Special",
+            "is_marquee": false,
+            "office_position": null,
+            "is_ranked_choice": true,
+            "results_certified": true,
+            "stage_type": "General",
+            "stage_party": null,
+            "candidates": [
+              {
+                "id": 59977,
+                "race": 42896,
+                "stage_party": null,
+                "party_affiliation": [
+                  {
+                    "id": 7,
+                    "name": "Nonpartisan",
+                    "url": "https://ballotpedia.org/Nonpartisan"
+                  }
+                ],
+                "is_incumbent": true,
+                "is_write_in": false,
+                "withdrew_still_on_ballot": false,
+                "cand_status": "Lost",
+                "votes_for_cand": 11538,
+                "ranked_choice_voting_rounds": [
+                  {
+                    "rcv_round": 1,
+                    "votes_for": 11208,
+                    "status": "Advanced"
+                  },
+                  {
+                    "rcv_round": 2,
+                    "votes_for": 51,
+                    "status": "Advanced"
+                  },
+                  {
+                    "rcv_round": 3,
+                    "votes_for": 279,
+                    "status": "Lost"
+                  }
+                ],
+                "person": {
+                  "id": 304529,
+                  "name": "Vallie Brown",
+                  "first_name": "Vallie",
+                  "last_name": "Brown",
+                  "url": "https://ballotpedia.org/Vallie_Brown"
+                }
+              },
+              {
+                "id": 59980,
+                "race": 42896,
+                "stage_party": null,
+                "party_affiliation": [
+                  {
+                    "id": 7,
+                    "name": "Nonpartisan",
+                    "url": "https://ballotpedia.org/Nonpartisan"
+                  }
+                ],
+                "is_incumbent": false,
+                "is_write_in": false,
+                "withdrew_still_on_ballot": false,
+                "cand_status": "Lost",
+                "votes_for_cand": 1035,
+                "ranked_choice_voting_rounds": [
+                  {
+                    "rcv_round": 1,
+                    "votes_for": 950,
+                    "status": "Advanced"
+                  },
+                  {
+                    "rcv_round": 2,
+                    "votes_for": 85,
+                    "status": "Advanced"
+                  },
+                  {
+                    "rcv_round": 3,
+                    "votes_for": null,
+                    "status": "Lost"
+                  }
+                ],
+                "person": {
+                  "id": 314488,
+                  "name": "Ryan Lam",
+                  "first_name": "Ryan",
+                  "last_name": "Lam",
+                  "url": "https://ballotpedia.org/Ryan_Lam"
+                }
+              },
+              {
+                "id": 59979,
+                "race": 42896,
+                "stage_party": null,
+                "party_affiliation": [
+                  {
+                    "id": 7,
+                    "name": "Nonpartisan",
+                    "url": "https://ballotpedia.org/Nonpartisan"
+                  }
+                ],
+                "is_incumbent": false,
+                "is_write_in": false,
+                "withdrew_still_on_ballot": false,
+                "cand_status": "Lost",
+                "votes_for_cand": 278,
+                "ranked_choice_voting_rounds": [
+                  {
+                    "rcv_round": 1,
+                    "votes_for": 278,
+                    "status": "Advanced"
+                  },
+                  {
+                    "rcv_round": 2,
+                    "votes_for": null,
+                    "status": "Lost"
+                  },
+                  {
+                    "rcv_round": 3,
+                    "votes_for": 0,
+                    "status": "Lost"
+                  }
+                ],
+                "person": {
+                  "id": 314487,
+                  "name": "Nomvula O'Meara",
+                  "first_name": "Nomvula",
+                  "last_name": "O'Meara",
+                  "url": "https://ballotpedia.org/Nomvula_O'Meara"
+                }
+              },
+              {
+                "id": 59978,
+                "race": 42896,
+                "stage_party": null,
+                "party_affiliation": [
+                  {
+                    "id": 7,
+                    "name": "Nonpartisan",
+                    "url": "https://ballotpedia.org/Nonpartisan"
+                  }
+                ],
+                "is_incumbent": false,
+                "is_write_in": false,
+                "withdrew_still_on_ballot": false,
+                "cand_status": "Won",
+                "votes_for_cand": 11723,
+                "ranked_choice_voting_rounds": [
+                  {
+                    "rcv_round": 1,
+                    "votes_for": 11239,
+                    "status": "Advanced"
+                  },
+                  {
+                    "rcv_round": 2,
+                    "votes_for": 70,
+                    "status": "Advanced"
+                  },
+                  {
+                    "rcv_round": 3,
+                    "votes_for": 414,
+                    "status": "Won"
+                  }
+                ],
+                "person": {
+                  "id": 13552,
+                  "name": "Dean Preston",
+                  "first_name": "Dean",
+                  "last_name": "Preston",
+                  "url": "https://ballotpedia.org/Dean_Preston"
+                }
+              }
+            ]
+          }
+        ]
+      }"""

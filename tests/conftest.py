@@ -6,4 +6,4 @@ from ballotpedia.api import Ballotpedia
 
 @pytest.fixture
 def fixture_ballotpedia():
-    return Ballotpedia('FAKEAPI')
+    return Ballotpedia("FAKEAPI")
