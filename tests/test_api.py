@@ -42,8 +42,13 @@ def test_election_dates_list(fixture_ballotpedia, requests_mock):
     """tests ballotpedia.api.election_dates_list"""
     # without parameters
     requests_mock.get(
-        "https://api4.ballotpedia.org/data/election_dates/list",
-        text=data.ELECTION_DATES_NO_PARAM,
+        "https://api4.ballotpedia.org/data/election_dates/list?page=1",
+        text=data.ELECTION_DATES_NO_PARAM_PAGE1,
+    )
+
+    requests_mock.get(
+        "https://api4.ballotpedia.org/data/election_dates/list?page=2",
+        text=data.ELECTION_DATES_NO_PARAM_PAGE2,
     )
 
     iters = 0
@@ -62,7 +67,7 @@ def test_election_dates_list(fixture_ballotpedia, requests_mock):
     for i in fixture_ballotpedia.election_dates_list(
         state="WI", election_type="Special", year=2020
     ):
-        assert i["date"] == date(2020, 5, 12)
+        assert i["date"] == "2020-05-12"
         iters += 1
     assert iters == 1
 
@@ -83,35 +88,51 @@ def test_elections_by_point(fixture_ballotpedia, requests_mock):
 def test_elections_by_state(fixture_ballotpedia, requests_mock):
     """tests ballotpedia.api.elections_by_state"""
     requests_mock.get(
-        "https://api4.ballotpedia.org/data/elections_by_state?state=WI&election_date=2020-11-03&office_level=Federal",
+        "https://api4.ballotpedia.org/data/elections_by_state?"
+        "state=WI&election_date=2020-11-03&office_level=Federal&page=1",
         text=data.ELECTIONS_BY_STATE,
+    )
+    requests_mock.get(
+        "https://api4.ballotpedia.org/data/elections_by_state?"
+        "state=WI&election_date=2020-11-03&office_level=Federal&page=2",
+        text=data.ELECTIONS_BY_STATE_PAGE2,
     )
     for i in fixture_ballotpedia.elections_by_state(
         state="WI", election_date=date(2020, 11, 3), office_level="Federal"
     ):
-        assert datetime.strptime(i["date"], "%Y-%m-%d") == "2020-11-03"
-        assert i["description"] == "Federal"
-        assert i["state"] == "WI"
+        assert i["name"].startswith("Wisconsin District")
+        assert i["type"] == "Congress"
 
     # When a race is a partisan primary, multiple objects will exist in the races array for the respective political
     # party primary. This is defined as stage_party. This applies to both the By Point and By State endpoints.
     requests_mock.get(
-        "https://api4.ballotpedia.org/data/elections_by_state?state=WI&election_date=2020-08-11",
-        text=data.ELECTIONS_BY_STATE,
+        "https://api4.ballotpedia.org/data/elections_by_state?state=WI&election_date=2020-08-11&page=1",
+        text=data.ELECTIONS_BY_STATE_PARTISAN,
+    )
+    requests_mock.get(
+        "https://api4.ballotpedia.org/data/elections_by_state?state=WI&election_date=2020-08-11&page=2",
+        text=data.ELECTIONS_BY_STATE_PAGE2,
     )
     for i in fixture_ballotpedia.elections_by_state(
         state="WI", election_date=date(2020, 8, 11)
     ):
-        assert datetime.strptime(i["date"], "%Y-%m-%d") == "2020-08-11"
-        assert i["state"] == "CA"
+        assert i["name"].startswith("Wisconsin District")
+        assert i["type"] == "Congress"
+        assert not i["ballot_measures"]
 
     # When a race utilizes Ranked Choice Voting, is_ranked_choice will be true. The ranked_choice_voting_rounds array
     # will be populated with the candidate's round results. The cand_status data point reflects their result at the end
     # of the RCV voting. The votes_for_cand reflects the total number of votes throughout the rounds. This applies to
     # both the By Point and By State endpoints in which the race uitilizes RCV.
     requests_mock.get(
-        "https://api4.ballotpedia.org/data/elections_by_state?state=WI&election_date=2020-08-11",
+        "https://api4.ballotpedia.org/data/elections_by_state?"
+        "state=CA&election_date=2020-08-11&district_type=County+subdivision&page=1",
         text=data.ELECTIONS_BY_STATE_RCV,
+    )
+    requests_mock.get(
+        "https://api4.ballotpedia.org/data/elections_by_state?"
+        "state=CA&election_date=2020-08-11&district_type=County+subdivision&page=2",
+        text=data.ELECTIONS_BY_STATE_PAGE2,
     )
     for i in fixture_ballotpedia.elections_by_state(
         state="CA", election_date=date(2020, 8, 11), district_type="County subdivision"
@@ -119,3 +140,18 @@ def test_elections_by_state(fixture_ballotpedia, requests_mock):
         assert datetime.strptime(i["date"], "%Y-%m-%d") == "2020-08-11"
         assert i["descripton"] == "County subdivision"
         assert i["state"] == "CA"
+
+    requests_mock.get(
+        "https://api4.ballotpedia.org/data/elections_by_state?state=MD&election_date=2024-11-05",
+        text=data.ELECTIONS_BY_STATE_ERROR,
+    )
+    assert (
+        len(
+            list(
+                fixture_ballotpedia.elections_by_state(
+                    state="MD", election_date=date(2024, 11, 5)
+                )
+            )
+        )
+        == 0
+    )

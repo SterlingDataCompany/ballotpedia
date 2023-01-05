@@ -689,7 +689,7 @@ ELECTION_DATES = """        {
         }
     """
 
-ELECTION_DATES_NO_PARAM = """    {
+ELECTION_DATES_NO_PARAM_PAGE1 = """    {
         "success": true,
         "data": {
             "elections": [
@@ -872,6 +872,10 @@ ELECTION_DATES_NO_PARAM = """    {
         },
         "message": null
     }"""
+
+ELECTION_DATES_NO_PARAM_PAGE2 = (
+    """{"success": true, "data": {"elections": null}, "message": null}"""
+)
 
 ELECTION_DATES_PARAMS = """    {
         "success": true,
@@ -3187,208 +3191,6 @@ ELECTIONS_BY_STATE_PARTISAN = """    {
                             ]
                         }
                     ]
-                },
-                {
-                    "id": 2428,
-                    "name": "Wisconsin State Senate District 2",
-                    "type": "State Legislative (Upper)",
-                    "ballot_measures": null,
-                    "races": [
-                        {
-                            "id": 49654,
-                            "office": {
-                                "id": 13559,
-                                "name": "Wisconsin State Senate District 2",
-                                "level": "State",
-                                "branch": "Legislative",
-                                "chamber": "Upper",
-                                "is_partisan": "Partisan all",
-                                "type": "Senator",
-                                "seat": "District 2",
-                                "url": "https://ballotpedia.org/Wisconsin_State_Senate_District_2",
-                                "office_district": 2428
-                            },
-                            "office_district": 2428,
-                            "url": "https://ballotpedia.org/Wisconsin_State_Senate_elections,_2020",
-                            "number_of_seats": 1,
-                            "year": 2020,
-                            "race_type": "Regular",
-                            "is_marquee": false,
-                            "office_position": null,
-                            "is_ranked_choice": false,
-                            "results_certified": true,
-                            "stage_type": "Primary",
-                            "stage_party": "Democratic Party",
-                            "candidates": [
-                                {
-                                    "id": 92418,
-                                    "race": 49654,
-                                    "stage_party": "Democratic Party",
-                                    "party_affiliation": [
-                                        {
-                                            "id": 2,
-                                            "name": "Democratic Party",
-                                            "url": "https://ballotpedia.org/Democratic_Party"
-                                        }
-                                    ],
-                                    "is_incumbent": false,
-                                    "is_write_in": true,
-                                    "withdrew_still_on_ballot": false,
-                                    "cand_status": "Advanced",
-                                    "votes_for_cand": 286,
-                                    "ranked_choice_voting_rounds": [],
-                                    "person": {
-                                        "id": 56305,
-                                        "name": "Tony Lee",
-                                        "first_name": "Tony",
-                                        "last_name": "Lee",
-                                        "url": "https://ballotpedia.org/Tony_Lee"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "id": 49654,
-                            "office": {
-                                "id": 13559,
-                                "name": "Wisconsin State Senate District 2",
-                                "level": "State",
-                                "branch": "Legislative",
-                                "chamber": "Upper",
-                                "is_partisan": "Partisan all",
-                                "type": "Senator",
-                                "seat": "District 2",
-                                "url": "https://ballotpedia.org/Wisconsin_State_Senate_District_2",
-                                "office_district": 2428
-                            },
-                            "office_district": 2428,
-                            "url": "https://ballotpedia.org/Wisconsin_State_Senate_elections,_2020",
-                            "number_of_seats": 1,
-                            "year": 2020,
-                            "race_type": "Regular",
-                            "is_marquee": false,
-                            "office_position": null,
-                            "is_ranked_choice": false,
-                            "results_certified": true,
-                            "stage_type": "Primary",
-                            "stage_party": "Republican Party",
-                            "candidates": [
-                                {
-                                    "id": 86297,
-                                    "race": 49654,
-                                    "stage_party": "Republican Party",
-                                    "party_affiliation": [
-                                        {
-                                            "id": 1,
-                                            "name": "Republican Party",
-                                            "url": "https://ballotpedia.org/Republican_Party"
-                                        }
-                                    ],
-                                    "is_incumbent": true,
-                                    "is_write_in": false,
-                                    "withdrew_still_on_ballot": false,
-                                    "cand_status": "Advanced",
-                                    "votes_for_cand": 11224,
-                                    "ranked_choice_voting_rounds": [],
-                                    "person": {
-                                        "id": 47327,
-                                        "name": "Robert Cowles",
-                                        "first_name": "Robert",
-                                        "last_name": "Cowles",
-                                        "url": "https://ballotpedia.org/Robert_Cowles"
-                                    }
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": 2430,
-                    "name": "Wisconsin State Senate District 4",
-                    "type": "State Legislative (Upper)",
-                    "ballot_measures": null,
-                    "races": [
-                        {
-                            "id": 49655,
-                            "office": {
-                                "id": 28823,
-                                "name": "Wisconsin State Senate District 4",
-                                "level": "State",
-                                "branch": "Legislative",
-                                "chamber": "Upper",
-                                "is_partisan": "Partisan all",
-                                "type": "Senator",
-                                "seat": "District 4",
-                                "url": "https://ballotpedia.org/Wisconsin_State_Senate_District_4",
-                                "office_district": 2430
-                            },
-                            "office_district": 2430,
-                            "url": "https://ballotpedia.org/Wisconsin_State_Senate_elections,_2020",
-                            "number_of_seats": 1,
-                            "year": 2020,
-                            "race_type": "Regular",
-                            "is_marquee": false,
-                            "office_position": null,
-                            "is_ranked_choice": false,
-                            "results_certified": true,
-                            "stage_type": "Primary",
-                            "stage_party": "Democratic Party",
-                            "candidates": [
-                                {
-                                    "id": 86299,
-                                    "race": 49655,
-                                    "stage_party": "Democratic Party",
-                                    "party_affiliation": [
-                                        {
-                                            "id": 2,
-                                            "name": "Democratic Party",
-                                            "url": "https://ballotpedia.org/Democratic_Party"
-                                        }
-                                    ],
-                                    "is_incumbent": true,
-                                    "is_write_in": false,
-                                    "withdrew_still_on_ballot": false,
-                                    "cand_status": "Advanced",
-                                    "votes_for_cand": 16898,
-                                    "ranked_choice_voting_rounds": [],
-                                    "person": {
-                                        "id": 34367,
-                                        "name": "Lena Taylor",
-                                        "first_name": "Lena",
-                                        "last_name": "Taylor",
-                                        "url": "https://ballotpedia.org/Lena_Taylor"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "id": 49655,
-                            "office": {
-                                "id": 28823,
-                                "name": "Wisconsin State Senate District 4",
-                                "level": "State",
-                                "branch": "Legislative",
-                                "chamber": "Upper",
-                                "is_partisan": "Partisan all",
-                                "type": "Senator",
-                                "seat": "District 4",
-                                "url": "https://ballotpedia.org/Wisconsin_State_Senate_District_4",
-                                "office_district": 2430
-                            },
-                            "office_district": 2430,
-                            "url": "https://ballotpedia.org/Wisconsin_State_Senate_elections,_2020",
-                            "number_of_seats": 1,
-                            "year": 2020,
-                            "race_type": "Regular",
-                            "is_marquee": false,
-                            "office_position": null,
-                            "is_ranked_choice": false,
-                            "results_certified": true,
-                            "stage_type": "Primary",
-                            "stage_party": "Republican Party",
-                            "candidates": null
-                        }
-                    ]
                 }
             ]
         },
@@ -3595,3 +3397,8 @@ ELECTIONS_BY_STATE_RCV = """    {
           }
         ]
       }"""
+
+ELECTIONS_BY_STATE_ERROR = """{"success": false, "data": {}, "message": "State and election date must be supplied."}"""
+ELECTIONS_BY_STATE_PAGE2 = (
+    """{"success": true, "data": "No results.", "message": null}"""
+)

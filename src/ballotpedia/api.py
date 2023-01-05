@@ -112,13 +112,18 @@ class Ballotpedia:
             payload["year"] = year
 
         page_iter = 1
-        while True:  # todo add terminal situation
+
+        while True:
             payload["page"] = page_iter
             ret = requests.get(
                 "https://api4.ballotpedia.org/data/election_dates/list",
                 params=payload,
                 headers=self.headers,
             ).json()
+
+            if ret.get("data", {}).get("elections", None) is None:
+                break
+
             for i in ret.get("data", {}).get("elections"):
                 yield i
             page_iter += 1
@@ -193,7 +198,7 @@ class Ballotpedia:
             payload["district_type"] = district_type
 
         page_iter = 1
-        while True:  # todo add terminal situation
+        while True:
             payload["page"] = page_iter
 
             ret = requests.get(
@@ -201,7 +206,10 @@ class Ballotpedia:
                 params=payload,
                 headers=self.headers,
             ).json()
-
-            for i in ret.get("data", []).get("elections"):
+            if ret.get("data", "No results.") == "No results." or not ret.get(
+                "data", {}
+            ):
+                break
+            for i in ret.get("data", {}).get("districts"):
                 yield i
             page_iter += 1
