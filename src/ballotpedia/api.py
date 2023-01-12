@@ -11,6 +11,14 @@ from typing import Dict, Iterator, Literal, Optional
 
 import requests
 
+from .api_types import (
+    ElectionDates,
+    ElectionLocation,
+    ElectionStates,
+    Location,
+    OfficeHolders,
+)
+
 _COLLECTIONS_TYPES = Literal["social", "contact"]
 _ELECTION_TYPES = Literal["General", "Primary", "Special", "Recall"]
 _OFFICE_TYPES = Literal["Federal", "State", "Local"]
@@ -47,10 +55,14 @@ class Ballotpedia:
         :param lat: latitude to search for current office holders
         :param lng: longitude to search for current office holders
         """
-        payload = {"lat": lat, "long": lng}
+        payload: Location = {
+            "lat": lat,
+            "long": lng,
+        }
+
         return requests.get(
             "https://api4.ballotpedia.org/data/districts/point",
-            params=payload,
+            params=payload,  # type: ignore
             headers=self.headers,
         ).json()
 
@@ -65,12 +77,15 @@ class Ballotpedia:
         :param lng: longitude to search for current office holders
         :param collections: type of collection to search (social,contact)
         """
-        payload = {"lat": lat, "long": lng}
-        if collections:
-            payload["collections"] = collections
+        payload: OfficeHolders = {
+            "lat": lat,
+            "long": lng,
+            "collections": collections if collections else None,
+        }
+
         return requests.get(
             "https://api4.ballotpedia.org/data/officeholders",
-            params=payload,
+            params=payload,  # type: ignore
             headers=self.headers,
         ).json()
 
@@ -82,10 +97,14 @@ class Ballotpedia:
         :param lat: latitude to search for current office holders
         :param lng: longitude to search for current office holders
         """
-        payload = {"lat": lat, "long": lng}
+        payload: Location = {
+            "lat": lat,
+            "long": lng,
+        }
+
         return requests.get(
             "https://api4.ballotpedia.org/data/election_dates/point",
-            params=payload,
+            params=payload,  # type: ignore
             headers=self.headers,
         ).json()
 
@@ -103,13 +122,12 @@ class Ballotpedia:
         :param election_type: election type to search (General,Primary,Special,Recall)
         :param year: election year to search
         """
-        payload = {}
-        if state:
-            payload["state"] = state
-        if election_type:
-            payload["type"] = election_type
-        if year:
-            payload["year"] = year
+        payload: ElectionDates = {
+            "state": state if state else None,
+            "type": election_type if election_type else None,
+            "year": year if year else None,
+            "page": None,
+        }
 
         page_iter = 1
 
@@ -117,7 +135,7 @@ class Ballotpedia:
             payload["page"] = page_iter
             ret = requests.get(
                 "https://api4.ballotpedia.org/data/election_dates/list",
-                params=payload,
+                params=payload,  # type: ignore
                 headers=self.headers,
             ).json()
 
@@ -147,17 +165,16 @@ class Ballotpedia:
         :param election_date: date of the election
         :param collections: type of collection to search (social,contact)
         """
-        payload = {
+        payload: ElectionLocation = {
             "lat": lat,
             "long": lng,
             "election_date": election_date.strftime("%Y-%m-%d"),
+            "collections": collections if collections else None,
         }
-        if collections:
-            payload["collections"] = collections
 
         return requests.get(
             "https://api4.ballotpedia.org/data/elections_by_point",
-            params=payload,
+            params=payload,  # type: ignore
             headers=self.headers,
         ).json()
 
@@ -187,15 +204,15 @@ class Ballotpedia:
         State subdivision,Special district subdivision,Judicial district subdivision,Special District,
         City-town subdivision,School district subdivision)
         """
-        payload = {"state": state, "election_date": election_date}
-        if collections:
-            payload["collections"] = collections
-        if office_level:
-            payload["office_level"] = office_level
-        if office_branch:
-            payload["office_branch"] = office_branch
-        if district_type:
-            payload["district_type"] = district_type
+        payload: ElectionStates = {
+            "state": state,
+            "election_date": election_date.strftime("%Y-%m-%d"),
+            "collections": collections if collections else None,
+            "office_level": office_level if office_level else None,
+            "office_branch": office_branch if office_branch else None,
+            "district_type": district_type if district_type else None,
+            "page": None,
+        }
 
         page_iter = 1
         while True:
@@ -203,7 +220,7 @@ class Ballotpedia:
 
             ret = requests.get(
                 "https://api4.ballotpedia.org/data/elections_by_state",
-                params=payload,
+                params=payload,  # type: ignore
                 headers=self.headers,
             ).json()
             if ret.get("data", "No results.") == "No results." or not ret.get(
