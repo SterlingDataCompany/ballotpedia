@@ -33,36 +33,3 @@ class ElectionStates(TypedDict):
     office_branch: Optional[str]
     district_type: Optional[str]
     page: Optional[int]
-
-
-# Optional[
-#     Union[
-#         SupportsItems[
-#             Union[str, bytes, int, float],
-#             Union[
-#                 str, bytes, int, float, Iterable[Union[str, bytes, int, float]], None
-#             ],
-#         ],
-#         Tuple[
-#             Union[str, bytes, int, float],
-#             Union[
-#                 str, bytes, int, float, Iterable[Union[str, bytes, int, float]], None
-#             ],
-#         ],
-#         Iterable[
-#             Tuple[
-#                 Union[str, bytes, int, float],
-#                 Union[
-#                     str,
-#                     bytes,
-#                     int,
-#                     float,
-#                     Iterable[Union[str, bytes, int, float]],
-#                     None,
-#                 ],
-#             ]
-#         ],
-#         str,
-#         bytes,
-#     ]
-# ]
